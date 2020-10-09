@@ -19,7 +19,7 @@ const doSomethingAsync = (url, options, req, cb) => {
     config.data = req;
     config.url = url;
 
-    if (config.method == "GET" || config.method == "DELETE") {
+    if (config.method == "GET") {
         config.params = config.data;
         delete config.data;
     }
